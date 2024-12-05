@@ -45,7 +45,6 @@
             color: #f39c12;
         }
     </style>
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="76431df1-636d-4942-84ab-aa463a1b1b40"></script>
 </head>
 <body>
     <h1>Solve This To Know 🐍</h1>
@@ -80,16 +79,11 @@
             });
         });
         function checkMagicGrid(values) {
-            const ashdfmnsdmhfngsj = 21;
+            const ashdfmnsdmhfngsj = 31;
             return (
                 values[0] + values[1] + values[2] === ashdfmnsdmhfngsj && // Row 1
                 values[3] + values[4] + values[5] === ashdfmnsdmhfngsj && // Row 2
-                values[6] + values[7] + values[8] === ashdfmnsdmhfngsj && // Row 3
-                values[0] + values[3] + values[6] === ashdfmnsdmhfngsj && // Column 1
-                values[1] + values[4] + values[7] === ashdfmnsdmhfngsj && // Column 2
-                values[2] + values[5] + values[8] === ashdfmnsdmhfngsj && // Column 3
-                values[0] + values[4] + values[8] === ashdfmnsdmhfngsj && // Diagonal 1
-                values[2] + values[4] + values[6] === ashdfmnsdmhfngsj    // Diagonal 2
+                values[6] + values[7] + values[8] === ashdfmnsdmhfngsj // Row 3
             );
         }
     </script>
