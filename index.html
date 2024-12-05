@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Saap</title>
+    <style>
+        body {
+            background-color: #222;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            gap: 10px;
+        }
+        .grid input {
+            width: 80px;
+            height: 80px;
+            font-size: 1.5rem;
+            text-align: center;
+            background-color: #444;
+            color: white;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+        }
+        .grid input:focus {
+            border: 2px solid #f39c12;
+        }
+        .sjhfgnbsdmhnb {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            display: none;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+    <h1>Solve This To Know 🐍</h1>
+    <p>allowed numbers -> 1-69</p>
+    <div class="grid">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+        <input type="number" maxlength="1">
+    </div>
+    <div class="sjhfgnbsdmhnb">Haha. Lol </div>
+
+    <script>
+        const jagfksjdmnb = document.querySelectorAll('.grid input');
+        const sjhfgnbsdmhnb = document.querySelector('.sjhfgnbsdmhnb');
+        const shfdasjdnb = "OSwxNCw4LDYsNywxMCwxMSw1LDM="; // Encoded new solution (9,14,8,6,7,10,11,5,3)
+        const kasdfnbkasjdf = atob(shfdasjdnb).split(',').map(Number);
+
+        jagfksjdmnb.forEach((input) => {
+            input.addEventListener('input', () => {
+                const values = Array.from(jagfksjdmnb).map(i => parseInt(i.value) || 0);
+                if (checkMagicGrid(values)) {
+                    sjhfgnbsdmhnb.style.display = 'block'; // Reveal success message
+                } else {
+                    sjhfgnbsdmhnb.style.display = 'none';
+                }
+            });
+        });
+        function checkMagicGrid(values) {
+            const ashdfmnsdmhfngsj = 21;
+            return (
+                values[0] + values[1] + values[2] === ashdfmnsdmhfngsj && // Row 1
+                values[3] + values[4] + values[5] === ashdfmnsdmhfngsj && // Row 2
+                values[6] + values[7] + values[8] === ashdfmnsdmhfngsj && // Row 3
+                values[0] + values[3] + values[6] === ashdfmnsdmhfngsj && // Column 1
+                values[1] + values[4] + values[7] === ashdfmnsdmhfngsj && // Column 2
+                values[2] + values[5] + values[8] === ashdfmnsdmhfngsj && // Column 3
+                values[0] + values[4] + values[8] === ashdfmnsdmhfngsj && // Diagonal 1
+                values[2] + values[4] + values[6] === ashdfmnsdmhfngsj    // Diagonal 2
+            );
+        }
+    </script>
+</body>
+</html>
